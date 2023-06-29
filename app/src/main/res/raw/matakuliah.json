@@ -1,0 +1,140 @@
+{
+  "matakuliah": [
+    {
+      "id": 1211,
+      "nama": "Algoritma & Pemrograman",
+      "mahasiswa": [
+        {
+          "nim": "1312307",
+          "nama": "Daffa Mukar"
+        },
+        {
+          "nim": "1323214",
+          "nama": "Nadia Salsa"
+        },
+        {
+          "nim": "1334298",
+          "nama": "Deni Satuiwan"
+        },
+        {
+          "nim": "1314414",
+          "nama": "Ahmad Kurniawan"
+        },
+        {
+          "nim": "1372463",
+          "nama": "Agung"
+        },
+        {
+          "nim": "1394218",
+          "nama": "Kenta Himawari"
+        }
+      ],
+      "dosen": {
+        "nid": "K1230",
+        "nama": "Himawan Denis S.Kom"
+      }
+    },
+    {
+      "id": 2321,
+      "nama": "Pemrograman Berbrasis Objek",
+      "mahasiswa": [
+        {
+          "nim": "1312307",
+          "nama": "Daffa Mukar"
+        },
+        {
+          "nim": "1323214",
+          "nama": "Nadia Salsa"
+        },
+        {
+          "nim": "1384317",
+          "nama": "Zeta"
+        },
+        {
+          "nim": "1382021",
+          "nama": "Saber Hitari"
+        },
+        {
+          "nim": "1372463",
+          "nama": "Agung"
+        },
+        {
+          "nim": "1394218",
+          "nama": "Kenta Himawari"
+        }
+      ],
+      "dosen": {
+        "nid": "K2321",
+        "nama": "M. Ali Hapstari S.T M.I.Kom"
+      }
+    },
+    {
+      "id": 3431,
+      "nama": "Basis Data",
+      "mahasiswa": [
+        {
+          "nim": "1331614",
+          "nama": "Haris Ardion"
+        },
+        {
+          "nim": "1330114",
+          "nama": "Lukman"
+        },
+        {
+          "nim": "1334298",
+          "nama": "Deni Satuiwan"
+        },
+        {
+          "nim": "1314414",
+          "nama": "Ahmad Kurniawan"
+        },
+        {
+          "nim": "1372463",
+          "nama": "Agung"
+        },
+        {
+          "nim": "1394218",
+          "nama": "Kenta Himawari"
+        }
+      ],
+      "dosen": {
+        "nid": "K3421",
+        "nama": "Megalita S.Kom"
+      }
+    },
+    {
+      "id": 4541,
+      "nama": "Pemrograman Web",
+      "mahasiswa": [
+        {
+          "nim": "1312307",
+          "nama": "Daffa Mukar"
+        },
+        {
+          "nim": "1331614",
+          "nama": "Haris Ardion"
+        },
+        {
+          "nim": "1334298",
+          "nama": "Deni Satuiwan"
+        },
+        {
+          "nim": "1314414",
+          "nama": "Ahmad Kurniawan"
+        },
+        {
+          "nim": "1372463",
+          "nama": "Agung"
+        },
+        {
+          "nim": "1384317",
+          "nama": "Zeta"
+        }
+      ],
+      "dosen": {
+        "nid": "K2321",
+        "nama": "M. Ali Hapstari S.T M.I.Kom"
+      }
+    }
+  ]
+}

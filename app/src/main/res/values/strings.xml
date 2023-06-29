@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">EUniversity</string>
+
+    <string name="matkul">Matakuliah</string>
+    <string name="dosen">Dosen: </string>
+    <string name="nid">NID: </string>
+    <string name="nama_dosen">Namanya</string>
+    <string name="nid_dosen">321312</string>
+    <string name="photo">Gambar</string>
+
+    <string name="home_title">Daftar Matakuliah</string>
+    <string name="detail_title">Detail Matakuliah</string>
 </resources>
