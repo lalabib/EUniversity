@@ -5,6 +5,7 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.switchMap
 import com.latihan.lalabib.euniversity.data.UniversityRepository
+import com.latihan.lalabib.euniversity.data.local.Mahasiswa
 import com.latihan.lalabib.euniversity.data.local.MataKuliahEntities
 
 class DetailViewModel(private val repository: UniversityRepository): ViewModel() {

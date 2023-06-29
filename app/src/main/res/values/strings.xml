@@ -12,6 +12,7 @@
     <string name="mahasiswa">Labib Hiba</string>
     <string name="nim_title">NIM: </string>
     <string name="nim">103120</string>
+    <string name="search_hint">Cari nama atau nim</string>
 
     <string name="home_title">Daftar Matakuliah</string>
     <string name="detail_title">Detail Matakuliah</string>

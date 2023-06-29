@@ -2,6 +2,7 @@ package com.latihan.lalabib.euniversity.data
 
 import android.content.Context
 import androidx.lifecycle.LiveData
+import com.latihan.lalabib.euniversity.data.local.Mahasiswa
 import com.latihan.lalabib.euniversity.data.local.MataKuliahEntities
 import com.latihan.lalabib.euniversity.data.local.UniversityDao
 import com.latihan.lalabib.euniversity.data.local.UniversityDatabase
