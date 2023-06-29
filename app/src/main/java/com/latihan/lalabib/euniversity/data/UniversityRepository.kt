@@ -10,6 +10,8 @@ class UniversityRepository(private val universityDao: UniversityDao) {
 
     fun getMatakuliah(): LiveData<List<MataKuliahEntities>> = universityDao.getMatakuliah()
 
+    fun getMatkulById(id: Int): LiveData<MataKuliahEntities> = universityDao.getMatkulById(id)
+
     companion object {
         @Volatile
         private var instance: UniversityRepository? = null

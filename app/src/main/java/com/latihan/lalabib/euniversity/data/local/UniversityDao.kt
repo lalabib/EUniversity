@@ -13,4 +13,7 @@ interface UniversityDao {
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     fun insertAllMataKuliah(matakuliah: MataKuliahEntities)
+
+    @Query("Select * from matakuliah where id = :id")
+    fun getMatkulById(id: Int): LiveData<MataKuliahEntities>
 }

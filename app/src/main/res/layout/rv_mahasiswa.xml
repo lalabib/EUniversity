@@ -8,7 +8,7 @@
     android:clickable="true"
     android:focusable="true"
     android:foreground="?android:selectableItemBackground"
-    app:cardCornerRadius="16dp"
+    app:cardCornerRadius="6dp"
     app:cardElevation="4dp"
     app:cardUseCompatPadding="true">
 
@@ -16,48 +16,47 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <ImageView
-            android:id="@+id/iv_icon"
-            android:layout_width="96dp"
-            android:layout_height="100dp"
-            android:layout_marginStart="2dp"
-            android:scaleType="fitXY"
-            app:layout_constraintBottom_toBottomOf="parent"
+        <TextView
+            android:id="@+id/tv_name_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="10dp"
+            android:textSize="16sp"
+            android:text="@string/mahasiswa_title"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            android:src="@drawable/ic_book"
-            android:contentDescription="@string/photo" />
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/tv_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="2dp"
-            android:layout_marginTop="30dp"
             android:textSize="16sp"
-            android:text="@string/matkul"
-            app:layout_constraintStart_toEndOf="@id/iv_icon"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintStart_toEndOf="@id/tv_name_title"
+            app:layout_constraintTop_toTopOf="@id/tv_name_title"
+            tools:text="@string/mahasiswa"/>
 
         <TextView
-            android:id="@+id/tv_dosen_title"
+            android:id="@+id/tv_nim_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="2dp"
+            android:layout_marginBottom="10dp"
             android:textSize="16sp"
-            android:text="@string/dosen"
-            app:layout_constraintStart_toStartOf="@id/tv_name"
-            app:layout_constraintTop_toBottomOf="@id/tv_name" />
+            android:text="@string/nim_title"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@id/tv_name_title"
+            app:layout_constraintTop_toBottomOf="@id/tv_name_title" />
 
         <TextView
-            android:id="@+id/tv_dosen"
+            android:id="@+id/tv_nim"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="2dp"
             android:textSize="16sp"
-            app:layout_constraintStart_toEndOf="@id/tv_dosen_title"
-            app:layout_constraintTop_toTopOf="@id/tv_dosen_title"
-            tools:text="@string/nama_dosen"/>
+            app:layout_constraintStart_toEndOf="@id/tv_nim_title"
+            app:layout_constraintTop_toTopOf="@id/tv_nim_title"
+            tools:text="@string/nim"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.cardview.widget.CardView>

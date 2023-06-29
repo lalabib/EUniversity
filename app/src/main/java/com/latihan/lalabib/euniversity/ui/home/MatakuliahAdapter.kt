@@ -8,7 +8,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.latihan.lalabib.euniversity.data.local.MataKuliahEntities
 import com.latihan.lalabib.euniversity.databinding.RvMatkulBinding
 
-class MatakuliahAdapter :
+class MatakuliahAdapter(private val onItemClick: (MataKuliahEntities) -> Unit) :
     ListAdapter<MataKuliahEntities, MatakuliahAdapter.MatkulViewHolder>(DIFFUTIL) {
 
     private object DIFFUTIL : DiffUtil.ItemCallback<MataKuliahEntities>() {
@@ -25,12 +25,11 @@ class MatakuliahAdapter :
         ): Boolean {
             return oldItem.id == newItem.id
         }
-
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MatkulViewHolder {
         val binding = RvMatkulBinding.inflate(LayoutInflater.from(parent.context), parent, false)
-        return MatkulViewHolder(binding)
+        return MatkulViewHolder(binding, onItemClick)
     }
 
     override fun onBindViewHolder(holder: MatkulViewHolder, position: Int) {
@@ -38,11 +37,16 @@ class MatakuliahAdapter :
         holder.bind(matkul)
     }
 
-    class MatkulViewHolder(private val binding: RvMatkulBinding) :
+    class MatkulViewHolder(
+        private val binding: RvMatkulBinding,
+        private val onItemClick: (MataKuliahEntities) -> Unit
+    ) :
         RecyclerView.ViewHolder(binding.root) {
         fun bind(matkul: MataKuliahEntities) {
             binding.tvName.text = matkul.nama
             binding.tvDosen.text = matkul.dosen.nama
+
+            itemView.setOnClickListener { onItemClick(matkul) }
         }
 
     }

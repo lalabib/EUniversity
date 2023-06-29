@@ -1,4 +1,4 @@
-package com.latihan.lalabib.euniversity.data
+package com.latihan.lalabib.euniversity.utils
 
 import androidx.room.TypeConverter
 import com.google.gson.Gson

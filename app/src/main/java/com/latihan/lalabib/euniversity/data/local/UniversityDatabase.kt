@@ -5,7 +5,7 @@ import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
 import androidx.room.TypeConverters
-import com.latihan.lalabib.euniversity.data.Converter
+import com.latihan.lalabib.euniversity.utils.Converter
 import com.latihan.lalabib.euniversity.data.StartingDatabase
 
 @Database(entities = [MataKuliahEntities::class], version = 2, exportSchema = false)

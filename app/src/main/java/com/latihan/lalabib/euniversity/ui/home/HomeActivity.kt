@@ -1,13 +1,14 @@
 package com.latihan.lalabib.euniversity.ui.home
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
-import android.widget.Toast
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.latihan.lalabib.euniversity.R
 import com.latihan.lalabib.euniversity.databinding.ActivityHomeBinding
+import com.latihan.lalabib.euniversity.ui.detail.DetailActivity
+import com.latihan.lalabib.euniversity.ui.detail.DetailActivity.Companion.extra_id
 import com.latihan.lalabib.euniversity.utils.ViewModelFactory
 
 class HomeActivity : AppCompatActivity() {
@@ -35,7 +36,11 @@ class HomeActivity : AppCompatActivity() {
     }
 
     private fun setupData() {
-        val matkulAdapter = MatakuliahAdapter()
+        val matkulAdapter = MatakuliahAdapter {
+            val intent = Intent(this@HomeActivity, DetailActivity::class.java)
+            intent.putExtra(extra_id, it.id)
+            startActivity(intent)
+        }
 
         homeViewModel.getMatakuliah().observe(this) {
             matkulAdapter.submitList(it)
